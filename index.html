@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Notes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <h1>My Notes</h1>
+
+  <!-- Dark Mode Toggle -->
+  <div class="dark-toggle">
+    <input type="checkbox" id="darkToggle">
+    <label for="darkToggle" class="switch-label" onclick="toggleDarkMode()">
+      <span id="modeIcon">🌙</span>
+    </label>
+  </div>
+
+
+  <div class="note">
+    
+    <input type="text" id="note-title" placeholder="Note Title">
+    <textarea id="note-content" rows="4" placeholder="Write your note..."></textarea>
+    <button  onclick="addNote()">Add Note</button>
+  </div>
+
+  <input type="text" id="search" placeholder="Search notes..." oninput="searchNotes()">
+
+  <div id="notes-container"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
